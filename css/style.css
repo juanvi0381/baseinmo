@@ -1,0 +1,16 @@
+/*footer*/
+footer{
+    background-color: rgb(187, 178, 47);
+    color: white;
+    text-align:center;
+    height: 20vh;
+    padding:20px;
+}
+.gh{
+    color: white;
+    margin: 30px;
+    padding: 6px;
+}
+p{
+    margin-top: 10px;
+}

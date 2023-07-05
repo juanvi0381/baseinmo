@@ -28,3 +28,14 @@ document.getElementById("header").innerHTML=`<nav class="navbar navbar-expand-sm
   </div>
 </div>
 </nav>`
+
+document.getElementById("foot").innerHTML=`<div class="icono">
+<i class="fa-brands fa-github fa-bounce fa-lg"></i>
+</div>
+<div>  
+  <a class="gh" href="https://github.com/juanvi0381">Vicente Suarez</a>
+  <a class="gh" href="https://github.com/TeresitaFraszczak">Teresita Fraszczak</a>  
+</div>
+<div>
+<p>Derechos Reservados @2023</p>
+</div> ` 
