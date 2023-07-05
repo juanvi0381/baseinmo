@@ -12,7 +12,7 @@ document.getElementById("header").innerHTML=`<nav class="navbar navbar-expand-sm
           </li>
           <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
-          </li>f
+          </li>
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CRUD</a>
               <div class="dropdown-menu" aria-labelledby="dropdownId">
@@ -35,7 +35,4 @@ document.getElementById("foot").innerHTML=`<div class="icono">
 <div>  
   <a class="gh" href="https://github.com/juanvi0381">Vicente Suarez</a>
   <a class="gh" href="https://github.com/TeresitaFraszczak">Teresita Fraszczak</a>  
-</div>
-<div>
-<p>Derechos Reservados @2023</p>
-</div> ` 
+</div>` 
