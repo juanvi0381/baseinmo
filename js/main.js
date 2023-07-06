@@ -33,7 +33,7 @@ document.getElementById("header").innerHTML=`<nav class="navbar navbar-expand-lg
 <div class="container-fluid">
 
   <a class="navbar-brand" href="https://inmobiliariasantacruz.net/">
-    <img src="/img/logoinmsf.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-center">
+    <img src="/img/logoinmsf.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-center text-light">
     INMOBILIARIA SANTA CRUZ
   </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +42,7 @@ document.getElementById("header").innerHTML=`<nav class="navbar navbar-expand-lg
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="https://inmobiliariasantacruz.net/">HOME</a>
+          <a class="nav-link" aria-current="page" href="https://inmobiliariasantacruz.net/">HOME</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Propiedades</a>
@@ -51,7 +51,7 @@ document.getElementById("header").innerHTML=`<nav class="navbar navbar-expand-lg
           <a class="nav-link" href="#">Propietarios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Contratos</a>
+          <a class="nav-link" href="#">Contratos</a>
         </li>
       </ul>
       </div>

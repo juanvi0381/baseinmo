@@ -3,18 +3,40 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+a{
+    color:white;
+}
+.nav-link{
+    font-weight: bold;
+}
+#navbarNav{
+    justify-content: flex-end; 
+    margin-right: 20px;
+}
+
+body{
+    background-image: url("/img/edificios.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
 /*footer*/
 footer{
-    background-color: rgb(187, 178, 47);
+    background-color: rgba(145, 145, 140, 0.39);
     color: white;
     text-align:center;
     height: 15vh;
     padding:20px;
+
 }
 .gh{
     color: white;
     margin: 30px;
-    padding: 6px;
+    padding: 0;
+    text-decoration: none;
 }
 p{
     margin-top: 10px;
