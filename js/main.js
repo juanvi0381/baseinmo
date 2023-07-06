@@ -1,4 +1,4 @@
-document.getElementById("header").innerHTML=`<nav class="navbar navbar-expand-sm navbar-light bg-light">
+/*document.getElementById("header").innerHTML=`<nav class="navbar navbar-expand-sm navbar-light bg-light">
 <div class="container">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -26,6 +26,42 @@ document.getElementById("header").innerHTML=`<nav class="navbar navbar-expand-sm
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
   </div>
+</div>
+</nav>`*/
+
+document.getElementById("header").innerHTML=`<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<div class="container-fluid">
+
+  <a class="navbar-brand" href="https://inmobiliariasantacruz.net/">
+    <img src="/img/logoinmsf.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-center">
+    INMOBILIARIA SANTA CRUZ
+  </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://inmobiliariasantacruz.net/">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Propiedades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Propietarios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Contratos</a>
+        </li>
+      </ul>
+      </div>
+      <div>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+        <button class="btn btn-outline-success border none" type="submit">🔍</button>
+      </form>      
+      </div>
+        
 </div>
 </nav>`
 
