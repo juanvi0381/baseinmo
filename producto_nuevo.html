@@ -23,26 +23,72 @@
   </header>
   <main>
     <div class="container">
-      <form  style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
-        <h1>Alta de Producto</h1>
+      <form  style="background-color: rgba(144, 148, 151, 0.918); margin: 2px auto; width: 70vh; padding: 30px; text-align:start; color: rgb(73, 71, 71); font-size: 12px; font-weight: bold;">
+        <h2>ALTA DE PROPIEDAD</h2>
+        <fieldset>
+        <div class="enlinea">
+          <Span>Categoria:</Span>
+          <label>
+              <input type="radio" name="categoria" value="casa">CASA
+          </label>
+          <label>
+              <input type="radio" name="categoria" value="departamento">DPTO 
+          </label>
+          <label>
+            <input type="radio" name="categoria" value="terreno">TERRENO
+          </label>
+        </div>
+        <div class="enlinea2">
+          <Span>En:</Span>
+            <label>
+               <input type="radio" name="en" value="venta">VENTA
+            </label>
+            <label>
+               <input type="radio" name="en" value="alquiler">ALQUILER 
+            </label>
+            <label>
+              <input type="radio" name="en" value="ambos">AMBOS
+            </label>
+        </div>
+        <div class="enlinea3">
+          <Span>Habitaciones:</Span>
+            <label>
+               <input type="radio" name="habitaciones" value="1">1D
+            </label>
+            <label>
+                <input type="radio" name="habitaciones" value="2">2D
+            </label>
+            <label>
+                <input type="radio" name="habitaciones" value="3">3D
+            </label>
+            <label>
+               <input type="radio" name="habitaciones" value="mas">Otros
+          </label>
+        </div> 
+      </fieldset>
+      <fieldset> 
         <div class="mb-3">
-          <label for="nombre">Nombre</label>
+          <label for="nombre">Nombre Propietario:</label>
           <input type="text" name="nombre" id="nombre">
         </div>
         <div class="mb-3">
-          <label for="precio">Precio</label>
+          <label for="precio">Precio:</label>
           <input type="number" name="precio" id="precio">
         </div>
         <div class="mb-3">
-          <label for="stock">Stock</label>
-          <input type="number" name="stock" id="stock">
+          <label for="direccion">Dirección:</label>
+          <input type="text" name="direccion" id="direccion">
         </div>
         <div class="mb-3">
-          <label for="imagen">Imagen</label>
+          <label for="localidad">Localidad:</label>
+          <input type="text" name="localidad" id="localidad">
+        </div>
+        <div class="mb-3">
+          <label for="imagen">Imágen:</label>
           <input type="text" name="imagen" id="imagen">
         </div>
-       
-          <button type="button" class="btn btn-success" onclick="guardar()">Grabar</button>
+      </fieldset>
+          <button type="button" class="btn btn-success" onclick="guardar()">GRABAR</button>
       </form>
 
 

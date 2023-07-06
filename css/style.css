@@ -23,6 +23,19 @@ body{
     background-position: center;
     
 }
+/*formulario*/
+form{
+    justify-content: center;
+}
+h2{
+    text-align: center;
+}
+fieldset{
+    padding: 10px;
+    border: none;
+}
+
+
 /*footer*/
 footer{
     background-color: rgba(145, 145, 140, 0.39);
