@@ -44,14 +44,19 @@ document.getElementById("header").innerHTML=`<nav class="navbar navbar-expand-lg
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="https://inmobiliariasantacruz.net/">HOME</a>
         </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="propiedades.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Propiedades
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="propiedad_nuevo.html">Alta</a></li>        
+        </ul>
+      </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Propiedades</a>
+          <a class="nav-link" href="personas.html">Personas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Propietarios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contratos</a>
+          <a class="nav-link" href="contratos.html">Contratos</a>
         </li>
       </ul>
       </div>
