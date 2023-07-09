@@ -26,7 +26,7 @@
             <br>
             <h1>Propiedades</h1>
             
-            <a class="btn btn-primary" href="propiedad_nuevo.html">Nuevo</a>
+            <a class="btn btn-warning" href="propiedad_nuevo.html"><i class="fa-solid fa-plus fa-beat fa-sm" style="color: #313535;"></i></a>
 
             <section v-if="error">Lo sentimos se produjo un error</section>
             <section v-else>
@@ -67,7 +67,7 @@
                                         <img width="60" :src="propiedad.imagen" :alt="propiedad.tipo">
                                     </td>
                                     <td>
-                                        <button type="button" class="btn btn-danger" v-on:click="eliminar(propiedad.id)"    >Eliminar</button>
+                                        <button type="button" class="btn btn-danger" v-on:click="eliminar(propiedad.id)">Eliminar</button>
                                         <a class="btn btn-primary" :href="'propiedad_editar.html?id='+ propiedad.id+'&tipo=' +propiedad.tipo+ '&domicilio='+propiedad.domicilio+'&precio_alquiler='+propiedad.precio_alquiler +  '&imagen='+propiedad.imagen" >Editar</a>
                                     </td>
                                 </tr>

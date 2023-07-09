@@ -33,7 +33,7 @@ body{
 }
 /*formulario*/
 
-h2{
+h2,h3{
     text-align: center;
 }
 fieldset{
@@ -41,6 +41,13 @@ fieldset{
     border: none;
 }
 
+.table-bordered{
+    background-color:rgba(144, 148, 151, 0.918);
+    border-color:rgba(110, 113, 116, 0.918);
+}
+th,td{
+    text-align: center;
+}
 
 /*footer*/
 footer{
