@@ -15,9 +15,9 @@ a{
     margin-right: 20px;
 }
 .dropdown-menu{
-    background-color:rgba(223, 220, 220, 0.979);
+    background-color:rgba(231, 143, 85, 0.979);
     border: none;
-    text-align: right;
+    text-align: left;
 }
 .dropdown-item{
     font-weight: bold;
