@@ -1,80 +1,76 @@
-//RECIBE ->
-// id=1&nombre=MICROONDAS&precio=50000&stock=10&imagen=https://picsum.photos/200/300?grayscale
+// Lee los argumentos pasados a este formulario
+console.log(location.search);
+var args = location.search.substr(1).split('&');
+console.log(args);
 
-console.log(location.search)     // lee los argumentos pasados a este formulario
-var args = location.search.substr(1).split('&');  
-//separa el string por los “&” creando una lista
-// [“id=3” , “nombre=’tv50’” , ”precio=1200”,”stock=20”]
-console.log(args)
-
-var parts = []
+var params = {};
 for (let i = 0; i < args.length; ++i) {
-    parts[i] = args[i].split('=');
+  let param = args[i].split('=');
+  params[param[0]] = decodeURIComponent(param[1]);
 }
-console.log(parts)
+console.log(params);
 
-//// [[“id",3] , [“nombre",’tv50’]]
-//decodeUriComponent elimina los caracteres especiales que recibe en la URL 
-document.getElementById("id").value = decodeURIComponent(parts[0][1])
-document.getElementById("tipo").value = decodeURIComponent(parts[1][1])
-document.getElementById("descrip_breve").value = decodeURIComponent(parts[2][1])
-document.getElementById("descrip_larga").value =decodeURIComponent( parts[3][1])
-document.getElementById("precio_alquiler").value =decodeURIComponent( parts[4][1])
-document.getElementById("precio_venta_pesos").value = decodeURIComponent(parts[5][1])
-document.getElementById("precio_venta_dolares").value = decodeURIComponent(parts[6][1])
-document.getElementById("domicilio").value = decodeURIComponent(parts[7][1])
-document.getElementById("ciudad").value =decodeURIComponent( parts[8][1])
-document.getElementById("departamento").value =decodeURIComponent( parts[9][1])
-document.getElementById("provincia").value = decodeURIComponent(parts[10][1])
-document.getElementById("expensas").value = decodeURIComponent(parts[11][1])
+// Asigna los valores a los campos del formulario
+document.getElementById("id").value = params.id;
+document.getElementById("tipo").value = params.tipo;
+document.getElementById("descrip_breve").value = params.descrip_breve;
+document.getElementById("descrip_larga").value = params.descrip_larga;
+document.getElementById("precio_alquiler").value = params.precio_alquiler;
+document.getElementById("precio_venta_pesos").value = params.precio_venta_pesos;
+document.getElementById("precio_venta_dolares").value = params.precio_venta_dolares;
+document.getElementById("domicilio").value = params.domicilio;
+document.getElementById("ciudad").value = params.ciudad;
+document.getElementById("departamento").value = params.departamento;
+document.getElementById("provincia").value = params.provincia;
+document.getElementById("expensas").value = params.expensas;
 
-document.getElementById("superficie_terreno").value = decodeURIComponent(parts[12][1])
-document.getElementById("superficie_total").value =decodeURIComponent( parts[13][1])
-document.getElementById("superficie_construida").value =decodeURIComponent( parts[14][1])
-document.getElementById("superficie_propia").value = decodeURIComponent(parts[15][1])
-document.getElementById("superficie_semicubierta").value = decodeURIComponent(parts[16][1])
-document.getElementById("orientacion").value = decodeURIComponent(parts[17][1])
-document.getElementById("imagen").value =decodeURIComponent( parts[18][1])
-document.getElementById("categoria_catastral").value =decodeURIComponent( parts[19][1])
-document.getElementById("fos").value = decodeURIComponent(parts[20][1])
-document.getElementById("fot").value =decodeURIComponent( parts[21][1])
+document.getElementById("superficie_terreno").value = params.superficie_terreno;
+document.getElementById("superficie_total").value = params.superficie_total;
+document.getElementById("superficie_construida").value = params.superficie_construida;
+document.getElementById("superficie_propia").value = params.superficie_propia;
+document.getElementById("superficie_semicubierta").value = params.superficie_semicubierta;
+document.getElementById("orientacion").value = params.orientacion;
+document.getElementById("imagen").value = params.imagen;
+document.getElementById("categoria_catastral").value = params.categoria_catastral;
+document.getElementById("fos").value = params.fos;
+document.getElementById("fot").value = params.fot;
 
-document.getElementById("antiguedad").value =decodeURIComponent( parts[22][1])
-document.getElementById("conservacion").value = decodeURIComponent(parts[23][1])
-document.getElementById("calidad_construc").value = decodeURIComponent(parts[24][1])
-document.getElementById("dormitorios").value = decodeURIComponent(parts[25][1])
-document.getElementById("cocinas").value =decodeURIComponent( parts[26][1])
-document.getElementById("banos").value =decodeURIComponent( parts[27][1])
-document.getElementById("cocheras").value =decodeURIComponent( parts[28][1])
-document.getElementById("jardin").value = decodeURIComponent(parts[29][1])
-document.getElementById("patio").value = decodeURIComponent(parts[30][1])
-document.getElementById("gas").value = decodeURIComponent(parts[31][1])
-document.getElementById("edet").value =decodeURIComponent( parts[32][1])
-document.getElementById("sat").value =decodeURIComponent( parts[33][1])
-document.getElementById("internet").value = decodeURIComponent(parts[34][1])
-document.getElementById("telefono").value = decodeURIComponent(parts[35][1])
-document.getElementById("seguridad").value = decodeURIComponent(parts[36][1])
+document.getElementById("antiguedad").value = params.antiguedad;
+document.getElementById("conservacion").value = params.conservacion;
+document.getElementById("calidad_construc").value = params.calidad_construc;
+document.getElementById("dormitorios").value = params.dormitorios;
+document.getElementById("cocinas").value = params.cocinas;
+document.getElementById("banos").value = params.banos;
+document.getElementById("cocheras").value = params.cocheras;
+document.getElementById("jardin").value = params.jardin;
+document.getElementById("patio").value = params.patio;
+document.getElementById("gas").value = params.gas;
+document.getElementById("edet").value = params.edet;
+document.getElementById("sat").value = params.sat;
+document.getElementById("internet").value = params.internet;
+document.getElementById("telefono").value = params.telefono;
+document.getElementById("seguridad").value = params.seguridad;
 
-document.getElementById("titulo").value =decodeURIComponent( parts[37][1])
-document.getElementById("reglamento").value =decodeURIComponent( parts[38][1])
-document.getElementById("plano").value =decodeURIComponent( parts[39][1])
-document.getElementById("autorizacion").value =decodeURIComponent( parts[40][1])
-
+document.getElementById("titulo").value = params.titulo;
+document.getElementById("reglamento").value = params.reglamento;
+document.getElementById("plano").value = params.plano;
+document.getElementById("autorizacion").value = params.autorizacion;
 
 function modificar() {
-let tipo = document.getElementById("tipo").value
-    let descrip_breve = document.getElementById("descrip_breve").value
-    let descrip_larga = document.getElementById("descrip_larga").value
-    let precio_alquiler = parseInt(document.getElementById("precio_alquiler").value)
-    let precio_venta_pesos = parseInt(document.getElementById("precio_venta_pesos").value)
-    let precio_venta_dolares = parseInt(document.getElementById("precio_venta_dolares").value)
-    let domicilio = document.getElementById("domicilio").value
-    let ciudad = document.getElementById("ciudad").value
-    let departamento = document.getElementById("departamento").value
-    let provincia = document.getElementById("provincia").value
-    let expensas = parseInt(document.getElementById("expensas").value)
-    
-    let superficie_terreno = parseInt(document.getElementById("superficie_terreno").value)
+  // Obtén los valores actualizados de los campos
+  let tipo = document.getElementById("tipo").value;
+  let descrip_breve = document.getElementById("descrip_breve").value;
+  let descrip_larga = document.getElementById("descrip_larga").value;
+  let precio_alquiler = parseInt(document.getElementById("precio_alquiler").value);
+  let precio_venta_pesos = parseInt(document.getElementById("precio_venta_pesos").value);
+  let precio_venta_dolares = parseInt(document.getElementById("precio_venta_dolares").value);
+  let domicilio = document.getElementById("domicilio").value;
+  let ciudad = document.getElementById("ciudad").value;
+  let departamento = document.getElementById("departamento").value;
+  let provincia = document.getElementById("provincia").value;
+  let expensas = parseInt(document.getElementById("expensas").value);
+
+   let superficie_terreno = parseInt(document.getElementById("superficie_terreno").value)
     let superficie_total = parseInt(document.getElementById("superficie_total").value)
     let superficie_construida = parseInt(document.getElementById("superficie_construida").value)
     let superficie_propia = parseInt(document.getElementById("superficie_propia").value)
@@ -106,25 +102,19 @@ let tipo = document.getElementById("tipo").value
     let plano = document.getElementById("plano").value
     let autorizacion = document.getElementById("autorizacion").value
 
-    // {
-    //     "imagen": "https://picsum.photos/200/300?grayscale",
-    //     "nombre": "MICROONDAS",
-    //     "precio": 50000,
-    //     "stock": 10
-    //   }
-
-    let propiedad = {
-        tipo: tipo,
-        descrip_breve: descrip_breve,
-        descrip_larga: descrip_larga,
-        precio_alquiler: precio_alquiler,
-        precio_venta_pesos: precio_venta_pesos,
-        precio_venta_dolares: precio_venta_dolares,
-        domicilio: domicilio,
-        ciudad: ciudad,
-        departamento: departamento,
-        provincia: provincia,
-        expensas: expensas,
+  // Crea el objeto propiedad con los valores actualizados
+  let propiedad = {
+    tipo: tipo,
+    descrip_breve: descrip_breve,
+    descrip_larga: descrip_larga,
+    precio_alquiler: precio_alquiler,
+    precio_venta_pesos: precio_venta_pesos,
+    precio_venta_dolares: precio_venta_dolares,
+    domicilio: domicilio,
+    ciudad: ciudad,
+    departamento: departamento,
+    provincia: provincia,
+    expensas: expensas,
     
         superficie_terreno: superficie_terreno,
         superficie_total: superficie_total,
@@ -158,24 +148,29 @@ let tipo = document.getElementById("tipo").value
         plano: plano,
         autorizacion: autorizacion,
 
-    }
-    let url = "https://juanvi.pythonanywhere.com/propiedades/"+id
-    var options = {
-        body: JSON.stringify(propiedad),
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        redirect: 'follow'
-    }
-    fetch(url, options)
-        .then(function () {
-            console.log("modificado")
-            alert("Registro modificado")
-            window.location.href = "./propiedades.html";  
-        //NUEVO,  si les da error el fetch  comentar esta linea que puede dar error  
-        })
-        .catch(err => {
-            //this.errored = true
-            console.error(err);
-            alert("Error al Modificar")
-        })      
+  };
+
+  // Realiza la llamada PUT para actualizar la propiedad en el servidor
+  let url = "https://juanvi.pythonanywhere.com/propiedades/" + params.id;
+  var options = {
+    body: JSON.stringify(propiedad),
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    redirect: 'follow'
+  };
+
+  fetch(url, options)
+    .then(function(response) {
+      if (response.ok) {
+        console.log("Registro modificado");
+        alert("Registro modificado");
+        window.location.href = "./propiedades.html";
+      } else {
+        throw new Error("Error al modificar");
+      }
+    })
+    .catch(function(error) {
+      console.error(error);
+      alert("Error al modificar");
+    });
 }
