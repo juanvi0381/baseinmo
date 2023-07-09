@@ -24,20 +24,21 @@
   <main>
     <div class="container">
         <form style="background-color: rgba(144, 148, 151, 0.918); margin: 2px auto; width: 70vh; padding: 30px; text-align: start; color: rgb(73, 71, 71); font-size: 12px; font-weight: bold;">
-            <h2>ALTA DE PERSONA</h2>
-            <h2>Ficha de persona</h2>
+            <h4>ALTA DE PERSONA</h4>
+            <h5>Ficha de persona</h5>
             <fieldset>
                 <div class="mb-3">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" class="form-control" name="nombre" id="nombre">
+                    <label for="nombre">* Nombre y Apellido:</label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" required="">
                 </div>
                 <div class="mb-3">
-                    <label for="domicilio">Domicilio:</label>
-                    <input type="text" class="form-control" name="domicilio" id="domicilio">
+                    <label for="domicilio">* Domicilio:</label>
+                    <input type="text" class="form-control" name="domicilio" id="domicilio" required="">
                 </div>
                 <div class="mb-3">
                     <label for="ciudad">Ciudad:</label>
                     <select class="form-control" name="ciudad" id="ciudad">
+                    <option value="Sin dato">Seleccione una opción</option> 
                     <option value="San Miguel de Tucumán">San Miguel de Tucumán</option>
                     <option value="Yerba Buena">Yerba Buena</option>
                     <option value="Tafí Viejo">Tafí Viejo</option>
@@ -58,6 +59,7 @@
                 <div class="mb-3">
                     <label for="departamento">Departamento:</label>
                     <select class="form-control" name="departamento" id="departamento">
+                    <option value="Sin dato">Seleccione una opción</option>   
                     <option value="Capital">Capital</option>
                     <option value="Yerba Buena">Yerba Buena</option>
                     <option value="Lules">Lules</option>
@@ -78,6 +80,7 @@
                 <div class="mb-3">
                     <label for="provincia">Provincia:</label>
                     <select class="form-control" name="provincia" id="provincia">
+                    <option value="Sin dato">Seleccione una opción</option>   
                     <option value="Tucumán">Tucumán</option>
                     <option value="Salta">Salta</option>
                     <option value="Jujuy">Jujuy</option>
@@ -93,19 +96,19 @@
                     <input type="text" class="form-control" name="actividad" id="actividad">
                 </div>
                 <div class="mb-3">
-                    <label for="dni">DNI:</label>
-                    <input type="number" class="form-control" name="dni" id="dni">
+                    <label for="dni">* DNI:</label>
+                    <input type="number" class="form-control" name="dni" id="dni" required="">
                 </div>
                 <div class="mb-3">
                     <label for="cuil">CUIL (sin guiones):</label>
                     <input type="number" class="form-control" name="cuil" id="cuil">
                 </div>
                 <div class="mb-3">
-                    <label for="celular">Celular:</label>
-                    <input type="number" class="form-control" name="celular" id="celular">
+                    <label for="celular">* Celular:</label>
+                    <input type="number" class="form-control" name="celular" id="celular" required="">
                 </div>
                 <div class="mb-3">
-                    <label for="email">E-mail:</label>
+                    <label for="email">* E-mail:</label>
                     <input type="text" class="form-control" name="email" id="email">
                 </div>
                 <div class="mb-3">
@@ -113,7 +116,9 @@
                     <input type="text" class="form-control" name="foto" id="foto">
                 </div>
             </fieldset>
+            <div class="d-grid gap-2 col-6 mx-auto">
             <button type="button" class="btn btn-success" onclick="guardar()">GUARDAR PERSONA</button>
+            </div>
         </form>
     </div>
     

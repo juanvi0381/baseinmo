@@ -52,10 +52,17 @@ document.getElementById("header").innerHTML=`<nav class="navbar navbar-expand-lg
          <li><a class="dropdown-item" href="propiedades.html">Lista de propiedades</a></li>
          <li><a class="dropdown-item" href="propiedad_nuevo.html">Alta de propiedades</a></li>        
         </ul>
-      </li>
-        <li class="nav-item">
-          <a class="nav-link" href="personas.html">Personas</a>
         </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="personas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Personas
+        </a>
+        <ul class="dropdown-menu">
+         <li><a class="dropdown-item" href="personas.html">Lista de personas</a></li>
+         <li><a class="dropdown-item" href="persona_nuevo.html">Alta de personas</a></li>        
+        </ul>
+        </li>
+        
         <li class="nav-item">
           <a class="nav-link" href="contratos.html">Contratos</a>
         </li>
