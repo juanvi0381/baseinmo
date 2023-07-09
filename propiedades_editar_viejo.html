@@ -23,192 +23,186 @@
   </header>
   <main>
     <div class="container">
-        <form style="background-color: rgba(144, 148, 151, 0.918); margin: 2px auto; width: 70vh; padding: 30px; text-align: start; color: rgb(73, 71, 71); font-size: 12px; font-weight: bold;">
-          <h2>EDITAR PROPIEDAD</h2>
-          <h4>Ficha de propiedad:</h4>
+        <form  style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
+          <h3>EDITAR PROPIEDAD</h3>
+          <h2>Ficha de propiedad</h2>
                 <fieldset>
                 <div class="mb-3">
                     <label for="id">Id</label>
-                    <input type="number" class="form-control" name="id" id="id" disabled>
+                    <input type="number" name="id" id="id" disabled>
                 </div>
                 <div class="mb-3">
-                    <label for="tipo">* Tipo de propiedad:</label>
-                    <select type="text" class="form-control" name="tipo" id="tipo" required="">
-                        <option value="casa">Casa</option>
-                        <option value="departamento">Depto</option>
-                        <option value="terreno">Terreno</option>
-                    </select>
-                  
+                    <label for="tipo">Tipo de propiedad:</label>
+                    <input type="text" name="tipo" id="tipo">
                 </div>                
                 <div class="mb-3">
                     <label for="descrip_breve">Título:</label>
-                    <input type="text" class="form-control" name="descrip_breve" id="descrip_breve">
+                    <input type="text" name="descrip_breve" id="descrip_breve">
                 </div>
                 <div class="mb-3">
                     <label for="descrip_larga">Descripción:</label>
-                    <input type="text" class="form-control" name="descrip_larga" id="descrip_larga">
+                    <input type="text" name="descrip_larga" id="descrip_larga">
                 </div>
                 <div class="mb-3">
-                    <label for="domicilio">* Domicilio:</label>
-                    <input type="text" class="form-control" name="Domicilio" id="domicilio" required="">
+                    <label for="domicilio">Domicilio:</label>
+                    <input type="text" name="Domicilio" id="domicilio">
                 </div>
                 <div class="mb-3">
-                    <label for="ciudad">* Ciudad:</label>
-                    <input type="text" class="form-control" name="ciudad" id="ciudad" required="">
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" name="ciudad" id="ciudad">
                 </div>
                 <div class="mb-3">
-                    <label for="departamento">* Departamento:</label>
-                    <input type="text" class="form-control" name="departamento" id="departamento" required="">
+                    <label for="departamento">Departamento:</label>
+                    <input type="text" name="departamento" id="departamento">
                 </div>
                 <div class="mb-3">
-                    <label for="provincia">* Provincia:</label>
-                    <input type="text" class="form-control" name="provincia" id="provincia" required="">
+                    <label for="provincia">Provincia:</label>
+                    <input type="text" name="provincia" id="provincia">
                 </div>
                 <div class="mb-3">
                     <label for="precio_alquiler">Precio del Alquiler:</label>
-                    <input type="number" class="form-control" name="precio_alquiler" id="precio_alquiler">
+                    <input type="number" name="precio_alquiler" id="precio_alquiler">
                 </div>
                 <div class="mb-3">
                     <label for="precio_venta_pesos">Precio Venta ($):</label>
-                    <input type="number" class="form-control" name="precio_venta_pesos" id="precio_venta_pesos">
+                    <input type="number" name="precio_venta_pesos" id="precio_venta_pesos">
                 </div>
                 <div class="mb-3">
                     <label for="precio_venta_dolares">Precio Venta (U$S):</label>
-                    <input type="number" class="form-control" name="precio_venta_dolares" id="precio_venta_dolares">
+                    <input type="number" name="precio_venta_dolares" id="precio_venta_dolares">
                 </div>
                 <div class="mb-3">
                     <label for="expensas">Expensas:</label>
-                    <input type="number" class="form-control" name="expensas" id="expensas">
+                    <input type="number" name="expensas" id="expensas">
                 </div>
                 </fieldset>
                 <fieldset>
-                <h4>Medidas de la propiedad:</h4>
+                <h2>Medidas de la propiedad</h2>
                 <div class="mb-3">
                     <label for="superficie_terreno">Superficie del terreno:</label>
-                    <input type="number" class="form-control" name="superficie_terreno" id="superficie_terreno">
+                    <input type="number" name="superficie_terreno" id="superficie_terreno">
                 </div>
                 <div class="mb-3">
                     <label for="superficie_total">Superficie total:</label>
-                    <input type="number" class="form-control" name="superficie_total" id="superficie_total">
+                    <input type="number" name="superficie_total" id="superficie_total">
                 </div>
                 <div class="mb-3">
                     <label for="superficie_construida">Superficie construida:</label>
-                    <input type="number" class="form-control" name="superficie_construida" id="superficie_construida">
+                    <input type="number" name="superficie_construida" id="superficie_construida">
                 </div>
                 <div class="mb-3">
                     <label for="superficie_propia">Superficie propia:</label>
-                    <input type="number" class="form-control" name="superficie_propia" id="superficie_propia">
+                    <input type="number" name="superficie_propia" id="superficie_propia">
                 </div>
                 <div class="mb-3">
                     <label for="superficie_semicubierta">Superficie semicubierta:</label>
-                    <input type="number" class="form-control" name="superficie_semicubierta" id="superficie_semicubierta">
+                    <input type="number" name="superficie_semicubierta" id="superficie_semicubierta">
                 </div>
                 <div class="mb-3">
                     <label for="orientacion">Orientación:</label>
-                    <input type="text" class="form-control" name="orientacion" id="orientacion">
+                    <input type="text" name="orientacion" id="orientacion">
                 </div>
                 <div class="mb-3">
-                    <label for="imagen">Link de Imágen:</label>
-                    <input type="text" class="form-control" name="imagen" id="imagen">
+                    <label for="imagen">Link de Imagen:</label>
+                    <input type="text" name="imagen" id="imagen">
                 </div>
                 <div class="mb-3">
                     <label for="categoria_catastral">Categoria catastral:</label>
-                    <input type="text" class="form-control" name="categoria_catastral" id="categoria_catastral">
+                    <input type="text" name="categoria_catastral" id="categoria_catastral">
                 </div>
                 <div class="mb-3">
                     <label for="fos">FOS:</label>
-                    <input type="number" class="form-control" name="fos" id="fos">
+                    <input type="number" name="fos" id="fos">
                 </div>
                 <div class="mb-3">
                     <label for="fot">FOT:</label>
-                    <input type="number" class="form-control" name="fot" id="fot">
+                    <input type="number" name="fot" id="fot">
                 </div>
                 </fieldset>
                 <fieldset>
-                    <h4>Características de la propiedad:</h4>
+                    <h2>Características de la propiedad</h2>
                     <div class="mb-3">
                         <label for="antiguedad">Antiguedad:</label>
-                        <input type="number" class="form-control" name="antiguedad" id="antiguedad">
+                        <input type="number" name="antiguedad" id="antiguedad">
                     </div>
                     <div class="mb-3">
                         <label for="conservacion">Conservación:</label>
-                        <input type="text" class="form-control" name="conservacion" id="conservacion">
+                        <input type="text" name="conservacion" id="conservacion">
                     </div>
                     <div class="mb-3">
                         <label for="calidad_construc">Calidad Construc.:</label>
-                        <input type="text" class="form-control" name="calidad_construc" id="calidad_construc">
+                        <input type="text" name="calidad_construc" id="calidad_construc">
                     </div>
                     <div class="mb-3">
                         <label for="dormitorios">Dormitorios:</label>
-                        <input type="number" class="form-control" name="dormitorios" id="dormitorios">
+                        <input type="number" name="dormitorios" id="dormitorios">
                     </div>
                     <div class="mb-3">
                         <label for="cocinas">Cocinas:</label>
-                        <input type="number" class="form-control" name="cocinas" id="cocinas">
+                        <input type="number" name="cocinas" id="cocinas">
                     </div>
                     <div class="mb-3">
                         <label for="banos">Baños:</label>
-                        <input type="number" class="form-control" name="banos" id="banos">
+                        <input type="number" name="banos" id="banos">
                     </div>
                     <div class="mb-3">
                         <label for="cocheras">Cocheras:</label>
-                        <input type="number" class="form-control" name="cocheras" id="cocheras">
+                        <input type="number" name="cocheras" id="cocheras">
                     </div>
                     <div class="mb-3">
                         <label for="jardin">Jardín:</label>
-                        <input type="number" class="form-control" name="jardin" id="jardin">
+                        <input type="number" name="jardin" id="jardin">
                     </div>
                     <div class="mb-3">
                         <label for="patio">Patio:</label>
-                        <input type="number" class="form-control" name="patio" id="patio">
+                        <input type="number" name="patio" id="patio">
                     </div>
                     <div class="mb-3">
                         <label for="gas">Servicio Gas:</label>
-                        <input type="text" class="form-control" name="gas" id="gas">
+                        <input type="text" name="gas" id="gas">
                     </div>
                     <div class="mb-3">
                         <label for="edet">Servicio Energía Eléctrica:</label>
-                        <input type="text" class="form-control" name="edet" id="edet">
+                        <input type="text" name="edet" id="edet">
                     </div>
                     <div class="mb-3">
                         <label for="sat">Servicio Agua:</label>
-                        <input type="text" class="form-control" name="sat" id="sat">
+                        <input type="text" name="sat" id="sat">
                     </div>
                     <div class="mb-3">
                         <label for="internet">Servicio Internet:</label>
-                        <input type="text" class="form-control" name="internet" id="internet">
+                        <input type="text" name="internet" id="internet">
                     </div>
                     <div class="mb-3">
                         <label for="telefono">Servicio de teléfono:</label>
-                        <input type="text" class="form-control" name="telefono" id="telefono">
+                        <input type="text" name="telefono" id="telefono">
                     </div>
                     <div class="mb-3">
                         <label for="seguridad">Seguridad:</label>
-                        <input type="text" class="form-control" name="seguridad" id="seguridad">
+                        <input type="text" name="seguridad" id="seguridad">
                     </div>
                 </fieldset>
                 <fieldset>
-                    <h4>Datos jurídicos de la propiedad:</h4>
+                    <h2>Datos jurídicos de la propiedad</h2>
                     <div class="mb-3">
                         <label for="titulo">Título de la propiedad:</label>
-                        <input type="text" class="form-control" name="titulo" id="titulo">
+                        <input type="text" name="titulo" id="titulo">
                     </div>
                     <div class="mb-3">
                         <label for="reglamento">Reglamento de Copropiedad:</label>
-                        <input type="text" class="form-control" name="reglamento" id="reglamento">
+                        <input type="text" name="reglamento" id="reglamento">
                     </div>
                     <div class="mb-3">
                         <label for="plano">Plano vigente:</label>
-                        <input type="text" class="form-control" name="plano" id="plano">
+                        <input type="text" name="plano" id="plano">
                     </div>
                     <div class="mb-3">
                         <label for="autorizacion">Autorización de Venta:</label>
-                        <input type="text" class="form-control" name="autorizacion" id="autorizacion">
+                        <input type="text" name="autorizacion" id="autorizacion">
                     </div>
                 </fieldset>
-               <div class="d-grid gap-2 col-6 mx-auto">
-               <button type="button" class="btn btn-success"click="modificar()">GUARDAR CAMBIOS</button>
-               </div>
+         
+            <button type="button" class="btn btn-success" onclick="modificar()">Grabar</button>
         </form>
   
   
