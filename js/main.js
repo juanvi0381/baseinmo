@@ -50,7 +50,7 @@ document.getElementById("header").innerHTML=`<nav class="navbar navbar-expand-lg
         </a>
         <ul class="dropdown-menu">
          <li><a class="dropdown-item" href="propiedades.html">Lista de propiedades</a></li>
-          <li><a class="dropdown-item" href="propiedad_nuevo.html">Alta de propiedades</a></li>        
+         <li><a class="dropdown-item" href="propiedad_nuevo.html">Alta de propiedades</a></li>        
         </ul>
       </li>
         <li class="nav-item">
