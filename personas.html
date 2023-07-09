@@ -1,49 +1,94 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <title>Personas</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Personas</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  
-  <link rel="icon" type="image/png" href= "./img/logoinmsf.png">
-  <link rel="stylesheet" href= "css/style.css">
-  <!-- Logo de hitgub-->
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+    <link rel="icon" type="image/png" href= "./img/logoinmsf.png">
+    <link rel="stylesheet" href= "css/style.css">
+    <!-- Logo de hitgub-->
     <script src="https://kit.fontawesome.com/e6d506b0f6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header id="header">
-    <!-- place navbar here -->
-  </header>
-  <main>
+    <header id="header">
+        <!-- place navbar here -->
+    </header>
+    <main>
+        <div id="app" class="container">
+            <br>
+            <h1>Personas</h1>
             
-    <h4 class="text-center">PÁGINA EN CONSTRUCCIÓN</h4>
-    <img src="img/gato-cat.gif" class="rounded mx-auto d-block" alt="">
+            <a class="btn btn-primary" href="persona_nuevo.html">Nuevo</a>
 
-  </main>
-  <footer id="foot">
-    <!-- place footer here -->
-  </footer>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
+            <section v-if="error">Lo sentimos se produjo un error</section>
+            <section v-else>
+                <section v-if="cargando">
+                    <div class="spinner-border"></div>
+                    <p>Cargando .....</p>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+                </section>
+                <section v-else>
+                    
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Domicilio</th>
+                                    <th scope="col">DNI</th>
+                                    <th scope="col">Celular</th>
+                                    <th scope="col">E-mail</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="persona in personas" class="">
+                                    <td scope="row">{{persona.id}}</td>
+                                    <td>{{persona.nombre}}</td>
+                                    <td>{{persona.domicilio}}</td>
+                                    <td>{{persona.dni}}</td>
+                                    <td>{{persona.celular}}</td>
+                                    <td>{{persona.email}}</td>
+                                    <td>
+                                        <button type="button" class="btn btn-danger" v-on:click="eliminar(persona.id)"    >Eliminar</button>
+                                        
+                                        <a class="btn btn-primary" :href="'persona_editar.html?id='+ persona.id+'&nombre=' +persona.nombre+ '&domicilio='+persona.domicilio+'&ciudad='+persona.ciudad+ '&departamento='+persona.departamento+ '&provincia='+persona.provincia+ '&actividad='+persona.actividad+ '&dni='+persona.dni+ '&cuil='+persona.cuil+ '&celular='+persona.celular+ '&email='+persona.email+ '&foto='+persona.foto" >Editar</a>
 
-  </script>
-  <script src="./js/main.js"></script>
-  <script src="./js/producto_nuevo.js"></script>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </section>
+        </div>
+       
+    </main>
+    <footer id="foot">
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <script src="./js/main.js"></script>
 
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
+    <script src="./js/personas.js"></script>
 </body>
 
 </html>
