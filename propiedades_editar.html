@@ -32,14 +32,9 @@
                     <input type="number" class="form-control" name="id" id="id" disabled>
                 </div>
                 <div class="mb-3">
-                    <label for="tipo">* Tipo de propiedad:</label>
-                    <select type="text" class="form-control" name="tipo" id="tipo" required="">
-                        <option value="casa">Casa</option>
-                        <option value="departamento">Depto</option>
-                        <option value="terreno">Terreno</option>
-                    </select>
-                  
-                </div>                
+                    <label for="tipo">Tipo de propiedad:</label>
+                    <input type="text" class="form-control" name="tipo" id="tipo">
+                </div>           
                 <div class="mb-3">
                     <label for="descrip_breve">Título:</label>
                     <input type="text" class="form-control" name="descrip_breve" id="descrip_breve">
@@ -207,7 +202,7 @@
                     </div>
                 </fieldset>
                <div class="d-grid gap-2 col-6 mx-auto">
-               <button type="button" class="btn btn-success"click="modificar()">GUARDAR CAMBIOS</button>
+               <button type="button" class="btn btn-success" onclick="modificar()">GUARDAR CAMBIOS</button>
                </div>
         </form>
   
