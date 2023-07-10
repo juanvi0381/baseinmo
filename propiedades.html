@@ -53,9 +53,9 @@
                                     <th scope="col">Domicilio</th>
                                     <th scope="col">Precio Alquiler</th>
                                     <th scope="col">Precio Venta (U$S)</th>
-                                    <th scope="col">Sup. Terreno</th>
-                                    <th scope="col">Sup. Propia</th>
-                                    <th scope="col">Sup. Total</th>
+                                    <th scope="col">Dormitorios</th>
+                                    <th scope="col">Baños</th>
+                                    <th scope="col">Sup. Construida</th>
                                     <th scope="col">Imágen</th>
                                     <th scope="col">Acciones</th>
                                 </tr>
@@ -67,9 +67,10 @@
                                     <td>{{propiedad.domicilio}}</td>
                                     <td>{{propiedad.precio_alquiler}}</td>
                                     <td>{{propiedad.precio_venta_dolares}}</td>
-                                    <td>{{propiedad.superficie_terreno}}</td>
+                                    <td>{{propiedad.dormitorios}}</td>
+                                    <td>{{propiedad.banos}}</td>
                                     <td>{{propiedad.superficie_construida}}</td>
-                                    <td>{{propiedad.superficie_propia}}</td>
+                                    
                                     <td>
                                         <img width="60" :src="propiedad.imagen" :alt="propiedad.tipo">
                                     </td>
