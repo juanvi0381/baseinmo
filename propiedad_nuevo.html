@@ -25,12 +25,13 @@
     <main>
         <div class="container">
             <form style="background-color: rgba(144, 148, 151, 0.918); margin: 2px auto; width: 70vh; padding: 30px; text-align: start; color: rgb(73, 71, 71); font-size: 12px; font-weight: bold;">
-                <h2>ALTA DE PROPIEDAD</h2>
-                <h2>Ficha de propiedad</h2>
+                <h4>ALTA DE PROPIEDAD</h4>
+                <h5>Ficha de propiedad</h5>
                 <fieldset>
                     <div class="mb-3">
-                        <label for="tipo">Tipo de propiedad:</label>
-                        <select class="form-control" name="tipo" id="tipo">
+                        <label for="tipo">* Tipo de propiedad:</label>
+                        <select class="form-control" name="tipo" id="tipo" required="">
+                        <option value="Sin dato">Seleccione una opción</option>    
                         <option value="Departamento">Departamento</option>
                         <option value="Casa">Casa</option>
                         <option value="Terreno">Terreno</option>
@@ -47,12 +48,13 @@
                         <input type="text" class="form-control" name="descrip_larga" id="descrip_larga">
                     </div>
                     <div class="mb-3">
-                        <label for="domicilio">Domicilio:</label>
-                        <input type="text" class="form-control" name="domicilio" id="domicilio">
+                        <label for="domicilio">* Domicilio:</label>
+                        <input type="text" class="form-control" name="domicilio" id="domicilio" required="">
                     </div>
                     <div class="mb-3">
-                        <label for="ciudad">Ciudad:</label>
-                        <select class="form-control" name="ciudad" id="ciudad">
+                        <label for="ciudad">* Ciudad:</label>
+                        <select class="form-control" name="ciudad" id="ciudad" required="">
+                        <option value="Sin dato">Seleccione una opción</option>   
                         <option value="San Miguel de Tucumán">San Miguel de Tucumán</option>
                         <option value="Yerba Buena">Yerba Buena</option>
                         <option value="Tafí Viejo">Tafí Viejo</option>
@@ -71,8 +73,9 @@
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label for="departamento">Departamento:</label>
-                        <select class="form-control" name="departamento" id="departamento">
+                        <label for="departamento">* Departamento:</label>
+                        <select class="form-control" name="departamento" id="departamento" required="">
+                        <option value="Sin dato">Seleccione una opción</option>
                         <option value="Capital">Capital</option>
                         <option value="Yerba Buena">Yerba Buena</option>
                         <option value="Lules">Lules</option>
@@ -91,9 +94,9 @@
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label for="provincia">Provincia:</label>
-                        <select class="form-control" name="provincia" id="provincia">
-                        <option value="Sin dato">Seleccione una:</option>
+                        <label for="provincia">* Provincia:</label>
+                        <select class="form-control" name="provincia" id="provincia" required="">
+                        <option value="Sin dato">Seleccione una opción</option>
                         <option value="Tucumán">Tucumán</option>
                         <option value="Salta">Salta</option>
                         <option value="Jujuy">Jujuy</option>
@@ -105,12 +108,12 @@
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label for="precio_alquiler">Precio del Alquiler:</label>
-                        <input type="number" class="form-control" name="precio_alquiler" id="precio_alquiler">
+                        <label for="precio_alquiler">* Precio del Alquiler ($):</label>
+                        <input type="number" class="form-control" name="precio_alquiler" id="precio_alquiler" required="">
                     </div>
                     <div class="mb-3">
-                        <label for="precio_venta_pesos">Precio Venta ($):</label>
-                        <input type="number" class="form-control" name="precio_venta_pesos" id="precio_venta_pesos">
+                        <label for="precio_venta_pesos">* Precio Venta ($):</label>
+                        <input type="number" class="form-control" name="precio_venta_pesos" id="precio_venta_pesos" required="">
                     </div>
                     <div class="mb-3">
                         <label for="precio_venta_dolares">Precio Venta (U$S):</label>
@@ -123,30 +126,31 @@
                 </fieldset>
           
                 <fieldset>
-                    <h2>Medidas de la propiedad</h2>
+                    <h5>Medidas de la propiedad</h5>
                     <div class="mb-3">
-                        <label for="superficie_terreno">Superficie del terreno:</label>
+                        <label for="superficie_terreno">Superficie del terreno M2:</label>
                         <input type="number" class="form-control" name="superficie_terreno" id="superficie_terreno">
                     </div>
                     <div class="mb-3">
-                        <label for="superficie_total">Superficie total:</label>
+                        <label for="superficie_total">Superficie total M2:</label>
                         <input type="number" class="form-control" name="superficie_total" id="superficie_total">
                     </div>
                     <div class="mb-3">
-                        <label for="superficie_construida">Superficie construida:</label>
+                        <label for="superficie_construida">Superficie construida M2:</label>
                         <input type="number" class="form-control" name="superficie_construida" id="superficie_construida">
                     </div>
                     <div class="mb-3">
-                        <label for="superficie_propia">Superficie propia:</label>
+                        <label for="superficie_propia">Superficie propia M2:</label>
                         <input type="number" class="form-control" name="superficie_propia" id="superficie_propia">
                     </div>
                     <div class="mb-3">
-                        <label for="superficie_semicubierta">Superficie semicubierta:</label>
+                        <label for="superficie_semicubierta">Superficie semicubierta M2:</label>
                         <input type="number" class="form-control" name="superficie_semicubierta" id="superficie_semicubierta">
                     </div>
                     <div class="mb-3">
                         <label for="orientacion">Orientación:</label>
                         <select class="form-control" name="orientacion" id="orientacion">
+                        <option value="Sin dato">Seleccione una opción</option>    
                         <option value="Norte">Norte</option>
                         <option value="Sur">Sur</option>
                         <option value="Este">Este</option>
@@ -158,7 +162,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="imagen">Link de Imagen:</label>
+                        <label for="imagen">Link de Imágen:</label>
                         <input type="text" class="form-control" name="imagen" id="imagen">
                     </div>
                     <div class="mb-3">
@@ -176,7 +180,7 @@
                 </fieldset>
 
                 <fieldset>
-                    <h2>Características de la propiedad</h2>
+                    <h5>Características de la propiedad</h5>
                     <div class="mb-3">
                         <label for="antiguedad">Antigüedad:</label>
                         <input type="number" class="form-control" name="antiguedad" id="antiguedad">
@@ -184,6 +188,7 @@
                     <div class="mb-3">
                         <label for="conservacion">Conservación:</label>
                         <select class="form-control" name="conservacion" id="conservacion">
+                        <option value="Sin dato">Seleccione una opción</option>
                         <option value="Malo">Malo</option>
                         <option value="Regular">Regular</option>
                         <option value="Bueno">Bueno</option>
@@ -194,6 +199,7 @@
                     <div class="mb-3">
                         <label for="calidad_construc">Calidad Construc.:</label>
                         <select class="form-control" name="calidad_construc" id="calidad_construc">
+                            <option value="Sin dato">Seleccione una opción</option>
                             <option value="Precario">Precario</option>
                             <option value="Standard">Standard</option>
                             <option value="Muy Buena">Muy Buena</option>
@@ -201,16 +207,16 @@
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label for="dormitorios">Dormitorios:</label>
-                        <input type="number" class="form-control" name="dormitorios" id="dormitorios">
+                        <label for="dormitorios">* Dormitorios:</label>
+                        <input type="number" class="form-control" name="dormitorios" id="dormitorios" required="">
                     </div>
                     <div class="mb-3">
                         <label for="cocinas">Cocinas:</label>
                         <input type="number" class="form-control" name="cocinas" id="cocinas">
                     </div>
                     <div class="mb-3">
-                        <label for="banos">Baños:</label>
-                        <input type="number" class="form-control" name="banos" id="banos">
+                        <label for="banos">* Baños:</label>
+                        <input type="number" class="form-control" name="banos" id="banos" required="">
                     </div>
                     <div class="mb-3">
                         <label for="cocheras">Cocheras:</label>
@@ -251,10 +257,11 @@
                 </fieldset>
             
                 <fieldset>
-                    <h2>Datos jurídicos de la propiedad</h2>
+                    <h5>Datos jurídicos de la propiedad</h5>
                     <div class="mb-3">
                         <label for="titulo">Título de la propiedad:</label>
                         <select class="form-control" name="titulo" id="titulo">
+                            <option value="Sin dato">Seleccione una opción</option>
                             <option value="Escritura Pública">Escritura Pública</option>
                             <option value="Boleto de Compraventa">Boleto de Compraventa</option>
                             <option value="Título de Tenencia Precaria">Título de Tenencia Precaria</option>
@@ -274,7 +281,9 @@
                         <input type="text" class="form-control" name="autorizacion" id="autorizacion">
                     </div>
                 </fieldset>
+                <div class="d-grid gap-2 col-6 mx-auto">
                 <button type="button" class="btn btn-success" onclick="guardar()">GUARDAR PROPIEDAD</button>
+                </div>
             </form>
         </div>
     </main>
