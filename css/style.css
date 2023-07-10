@@ -6,8 +6,8 @@
 
 /*login*/
 .login-formbody{
-    width: 500px;
-    min-width: 400px;
+    width: 400px;
+    min-width: 300px;
     border-radius:5px;
     margin:auto;
     margin-top:60px;
@@ -52,7 +52,7 @@
     color:#df490e;
 }
 
-.login-formbody button{
+#boton{
     display: block;
     margin: auto;
     margin-top: 25px;
@@ -68,7 +68,7 @@
     border: 2px solid #df490e;
 }
 
-.login-formbody button:hover{
+#boton:hover{
     color:#fff;
     border: 2px solid #df490e;
     background:#df490ef1;
