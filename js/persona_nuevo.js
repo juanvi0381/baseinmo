@@ -5,9 +5,9 @@ function guardar() {
     let departamento = document.getElementById("departamento").value
     let provincia = document.getElementById("provincia").value
     let actividad = document.getElementById("actividad").value
-    let dni = parseInt(document.getElementById("dni").value)
-    let cuil = parseInt(document.getElementById("cuil").value)
-    let celular = parseInt(document.getElementById("celular").value)
+    let dni = document.getElementById("dni").value
+    let cuil = document.getElementById("cuil").value
+    let celular = document.getElementById("celular").value
     let email = document.getElementById("email").value
     let foto = document.getElementById("foto").value
     // {
