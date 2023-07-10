@@ -25,8 +25,14 @@
         <div id="app" class="container">
             <br>
             <h3>PERSONAS</h3>
+
+            <div class="d-flex justify-content-end m-2 me-2">
+                
+                <a class="btn" id="agregar" href="persona_nuevo.html">
+                    <i class="fa-solid fa-plus fa-beat fa-sm" style="color: #313535;"></i></a>   
+
+            </div>
             
-            <a class="btn btn-warning" href="persona_nuevo.html"><i class="fa-solid fa-plus fa-beat fa-sm" style="color: #313535;"></i></a>
 
             <section v-if="error">Lo sentimos se produjo un error</section>
             <section v-else>
@@ -59,9 +65,11 @@
                                     <td>{{persona.celular}}</td>
                                     <td>{{persona.email}}</td>
                                     <td>
-                                        <button type="button" class="btn btn-danger" v-on:click="eliminar(persona.id)"    >Eliminar</button>
-                                        
-                                        <a class="btn btn-primary" :href="'persona_editar.html?id='+ persona.id+'&nombre=' +persona.nombre+ '&domicilio='+persona.domicilio+'&ciudad='+persona.ciudad+ '&departamento='+persona.departamento+ '&provincia='+persona.provincia+ '&actividad='+persona.actividad+ '&dni='+persona.dni+ '&cuil='+persona.cuil+ '&celular='+persona.celular+ '&email='+persona.email+ '&foto='+persona.foto" >Editar</a>
+                                        <button type="button" class="btn btn-danger" v-on:click="eliminar(persona.id)">
+                                            <i class="fa-solid fa-trash-can" style="color: #161718;"></i></button>  
+                                                                               
+                                        <a class="btn btn-primary" :href="'persona_editar.html?id='+ persona.id+'&nombre=' +persona.nombre+ '&domicilio='+persona.domicilio+'&ciudad='+persona.ciudad+ '&departamento='+persona.departamento+ '&provincia='+persona.provincia+ '&actividad='+persona.actividad+ '&dni='+persona.dni+ '&cuil='+persona.cuil+ '&celular='+persona.celular+ '&email='+persona.email+ '&foto='+persona.foto" >
+                                            <i class="fa-solid fa-pencil" style="color:#161718;"></i></a>
 
                                     </td>
                                 </tr>

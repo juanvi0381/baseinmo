@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 /*login*/
@@ -86,7 +88,7 @@ a{
     margin-right: 20px;
 }
 .dropdown-menu{
-    background-color:rgba(231, 143, 85, 0.979);
+    background-color:rgba(231, 143, 85, 0.637);
     border: none;
     text-align: left;
 }
@@ -118,6 +120,10 @@ fieldset{
 }
 th,td{
     text-align: center;
+}
+
+#agregar{
+    background-color:#f35416;
 }
 
 /*footer*/

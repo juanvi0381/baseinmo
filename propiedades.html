@@ -26,10 +26,12 @@
             <br>
             <h3>PROPIEDADES</h3>
             
-            <div class="d-flex justify-content-between">
-                <a class="btn btn-warning" href="propiedad_nuevo.html"><i
-                        class="fa-solid fa-plus fa-beat fa-sm"></i></a>
-                <a class="btn btn-primary" href="propiedades_cards.html">Ver cards de propiedades</a>
+            <div class="d-flex justify-content-end m-2 me-2" >
+                
+                <a class="btn btn-secondary" href="propiedades_cards.html">
+                    <i class="fa-regular fa-address-card" style="color: #1a1411;"></i></a>
+                <a class="btn" id="agregar" href="propiedad_nuevo.html">
+                    <i class="fa-solid fa-plus fa-beat fa-sm"></i></a>
 
             </div>
 
@@ -54,7 +56,7 @@
                                     <th scope="col">Sup. Terreno</th>
                                     <th scope="col">Sup. Propia</th>
                                     <th scope="col">Sup. Total</th>
-                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Imágen</th>
                                     <th scope="col">Acciones</th>
                                 </tr>
                             </thead>
@@ -72,8 +74,10 @@
                                         <img width="60" :src="propiedad.imagen" :alt="propiedad.tipo">
                                     </td>
                                     <td>
-                                        <button type="button" class="btn btn-danger" v-on:click="eliminar(propiedad.id)">Eliminar</button>
-                                        <a class="btn btn-primary" :href="'propiedades_editar.html?id=' + propiedad.id + '&tipo=' + propiedad.tipo + '&descrip_breve=' + propiedad.descrip_breve + '&descrip_larga=' + propiedad.descrip_larga + '&precio_alquiler=' + propiedad.precio_alquiler + '&precio_venta_pesos=' + propiedad.precio_venta_pesos + '&precio_venta_dolares=' + propiedad.precio_venta_dolares + '&domicilio=' + propiedad.domicilio + '&ciudad=' + propiedad.ciudad + '&departamento=' + propiedad.departamento + '&provincia=' + propiedad.provincia + '&expensas=' + propiedad.expensas + '&superficie_terreno=' + propiedad.superficie_terreno + '&superficie_total=' + propiedad.superficie_total + '&superficie_construida=' + propiedad.superficie_construida + '&superficie_propia=' + propiedad.superficie_propia + '&superficie_semicubierta=' + propiedad.superficie_semicubierta + '&orientacion=' + propiedad.orientacion + '&imagen=' + propiedad.imagen + '&categoria_catastral=' + propiedad.categoria_catastral + '&fos=' + propiedad.fos + '&fot=' + propiedad.fot + '&antiguedad=' + propiedad.antiguedad + '&conservacion=' + propiedad.conservacion + '&calidad_construc=' + propiedad.calidad_construc + '&dormitorios=' + propiedad.dormitorios + '&cocinas=' + propiedad.cocinas + '&banos=' + propiedad.banos + '&cocheras=' + propiedad.cocheras + '&jardin=' + propiedad.jardin + '&patio=' + propiedad.patio + '&gas=' + propiedad.gas + '&edet=' + propiedad.edet + '&sat=' + propiedad.sat + '&internet=' + propiedad.internet + '&telefono=' + propiedad.telefono + '&seguridad=' + propiedad.seguridad + '&titulo=' + propiedad.titulo + '&reglamento=' + propiedad.reglamento + '&plano=' + propiedad.plano + '&autorizacion=' + propiedad.autorizacion">Editar</a>
+                                        <button type="button" class="btn btn-danger" v-on:click="eliminar(propiedad.id)">
+                                            <i class="fa-solid fa-trash-can" style="color: #161718;"></i></button>
+                                        <a class="btn btn-primary" :href="'propiedades_editar.html?id=' + propiedad.id + '&tipo=' + propiedad.tipo + '&descrip_breve=' + propiedad.descrip_breve + '&descrip_larga=' + propiedad.descrip_larga + '&precio_alquiler=' + propiedad.precio_alquiler + '&precio_venta_pesos=' + propiedad.precio_venta_pesos + '&precio_venta_dolares=' + propiedad.precio_venta_dolares + '&domicilio=' + propiedad.domicilio + '&ciudad=' + propiedad.ciudad + '&departamento=' + propiedad.departamento + '&provincia=' + propiedad.provincia + '&expensas=' + propiedad.expensas + '&superficie_terreno=' + propiedad.superficie_terreno + '&superficie_total=' + propiedad.superficie_total + '&superficie_construida=' + propiedad.superficie_construida + '&superficie_propia=' + propiedad.superficie_propia + '&superficie_semicubierta=' + propiedad.superficie_semicubierta + '&orientacion=' + propiedad.orientacion + '&imagen=' + propiedad.imagen + '&categoria_catastral=' + propiedad.categoria_catastral + '&fos=' + propiedad.fos + '&fot=' + propiedad.fot + '&antiguedad=' + propiedad.antiguedad + '&conservacion=' + propiedad.conservacion + '&calidad_construc=' + propiedad.calidad_construc + '&dormitorios=' + propiedad.dormitorios + '&cocinas=' + propiedad.cocinas + '&banos=' + propiedad.banos + '&cocheras=' + propiedad.cocheras + '&jardin=' + propiedad.jardin + '&patio=' + propiedad.patio + '&gas=' + propiedad.gas + '&edet=' + propiedad.edet + '&sat=' + propiedad.sat + '&internet=' + propiedad.internet + '&telefono=' + propiedad.telefono + '&seguridad=' + propiedad.seguridad + '&titulo=' + propiedad.titulo + '&reglamento=' + propiedad.reglamento + '&plano=' + propiedad.plano + '&autorizacion=' + propiedad.autorizacion">
+                                            <i class="fa-solid fa-pencil" style="color:#161718;"></i></a>
                                     </td>
                                 </tr>
                             </tbody>

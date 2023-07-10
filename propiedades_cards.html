@@ -30,13 +30,17 @@
     </header>
     <main>
         <div id="app" class="container">
-            <br>
+            
             <h3>PROPIEDADES</h3>
+            <div class="d-flex justify-content-end">
+                
+                <a class="btn btn-secondary" href="propiedades.html">
+                    <i class="fa-regular fa-rectangle-list fa-beat" style="color:#1a1411;"></i></a>
+                <a class="btn" id="agregar" href="propiedad_nuevo.html">
+                    <i class="fa-solid fa-plus fa-beat fa-sm"></i></a>
 
-            <div class="d-flex justify-content-between">
-                <a class="btn btn-warning" href="propiedad_nuevo.html"><i class="fa-solid fa-plus fa-beat fa-sm"></i></a>
-                <a class="btn btn-primary" href="propiedades.html">Ver tabla de propiedades</a>
             </div>
+            
 
             <section v-if="error">Lo sentimos se produjo un error</section>
             <section v-else>
